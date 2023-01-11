@@ -6,7 +6,6 @@ import About from './pages/About';
 import MyStars from './pages/MyStars';
 import Contact from './pages/Contact';
 import OneStar from "./pages/OneStar"
-// import Main from './components/Main';
 
 function App() {
   return (
