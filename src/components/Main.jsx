@@ -39,9 +39,9 @@ function Main() {
         <div>
             <div>
                 <h4>Fetch de la data solo un objeto</h4>
-                {fetchInfo.map((item)=>{
+                {fetchInfo.map((item, i)=>{
                     return(
-                        <div className=' w-60 bg-white shadow rounded'>
+                        <div className=' w-60 bg-white shadow rounded' key={i}>
                             <h2 className='font-bold text-s mb-2'>{item.title}</h2>
                             <p>{item.date}</p>
                             <img className='w-full' alt={item.title} src={item.hdurl} />
