@@ -1,21 +1,32 @@
-
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home';
-import About from './pages/About';
-import MyStars from './pages/MyStars';
-import Contact from './pages/Contact';
-import OneStar from "./pages/OneStar"
+import Mystarspage from './pages/Mystarspage';
+import Homepage from './pages/Homepage';
+import Agregarpage from './pages/Agregarpage';
+import Birthpage from './pages/Birthpage';
+import Familystarspage from './pages/Familystarspage';
+import Onestarpage from './pages/Onestarpage';
+import Aboutpage from './pages/Aboutpage';
+import Contactpage from './pages/Contactpage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/my-stars' element={<MyStars />} />
-      <Route path='/one-star' element={<OneStar />} />
-    </Routes>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/birth" element={<Birthpage />} />
+        <Route path="/agregar" element={<Agregarpage />} />
+        <Route path="/my-stars" element={<Mystarspage />} />
+        <Route path="/family-stars" element={<Familystarspage />} />
+        <Route path="/one-star" element={<Onestarpage />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/contact" element={<Contactpage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
