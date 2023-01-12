@@ -49,7 +49,7 @@ function Main() {
                             <figcaption>{item.copyright}</figcaption>
                             <div>
                                 <h1>conceptos</h1>
-                                {/* <span>{item.concept_tags}</span> */}
+                                {/* <span>{item.concepts}</span> */}
                             </div>
                         </div>
                     )
