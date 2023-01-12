@@ -1,16 +1,16 @@
 // import { useDispatch,useSelector } from 'react-redux'
 // import { fetchData } from '../features/data/dataSlice'
 import axios from 'axios';
-import { useState,useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 function Main() {
-   
-    const [fetchInfo, setFetchInfo] = useState([])
-    const [uno, setUno] = useState(1)
-    const key= '3vIRJmcLMjl1pQ0peu0exjGVox0U3cK8bUgWRrJC'
-    
-    const mainUrl= `https://api.nasa.gov/planetary/apod?api_key=${key}&count=1`
-    
+
+    const [fetchInfo, setFetchInfo] = useState([]);
+    const [uno, setUno] = useState(1);
+    const key = '3vIRJmcLMjl1pQ0peu0exjGVox0U3cK8bUgWRrJC';
+
+    const mainUrl = `https://api.nasa.gov/planetary/apod?api_key=${key}&count=1`;
+
     // const data = useSelector((state) => state.data.value)
     // const dispatch = useDispatch();
 
@@ -18,29 +18,30 @@ function Main() {
     //     dispatch(fetchData())
     // }
 
-    
-    useEffect(()=>{
-        
+
+    useEffect(() => {
+
         axios.get(mainUrl)
-            .then(res=>{
+            .then(res => {
                 setFetchInfo(res.data)
                 console.log(res)
-                
+
                 console.log(fetchInfo)
-            })      
-            .catch(err=>{
-                console.log(err)    
-            })  
-            
+            })
+            .catch(err => {
+                console.log(err)
+            })
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [uno]);
 
-    
+
     return (
         <div>
             <div>
                 <h4>Fetch de la data solo un objeto</h4>
-                {fetchInfo.map((item, i)=>{
-                    return(
+                {fetchInfo.map((item, i) => {
+                    return (
                         <div className=' w-60 bg-white shadow rounded' key={i}>
                             <h2 className='font-bold text-s mb-2'>{item.title}</h2>
                             <p>{item.date}</p>
@@ -56,7 +57,7 @@ function Main() {
                 })}
             </div>
         </div>
-    )
+    );
 }
 
-export default Main
+export default Main;
