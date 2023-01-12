@@ -1,7 +1,10 @@
 import React from "react";
+import DateStar from "../components/DateStar";
 
 const MyStars = () => {
-  return <div>MyStars</div>;
+  return(
+    <DateStar/>
+  )
 };
 
 export default MyStars;
