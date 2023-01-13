@@ -1,12 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'; 
+// import {dataSlice} from '../features/data/dataSlice';
 import dataReducer from '../features/data/dataSlice';
-const space = configureStore({
+
+
+const store = configureStore({
     reducer: {
         
         //importando el reducer (taskReducer )
         //nos permite acceder a los valores
-        data: dataReducer,
+        data: dataReducer
     }
 })
 
-export default space;
+export default store;
