@@ -1,6 +1,8 @@
+import styles from './styles/Footer.module.css';
+
 const Footer = () => {
     return (
-        <footer className="footer-container">
+        <footer className={styles.footerContainer}>
             © Kruger Star Copyrights. Dylan Edwin Jorge
         </footer>
     );
