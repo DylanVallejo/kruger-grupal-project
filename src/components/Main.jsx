@@ -1,8 +1,9 @@
 import { useDispatch ,useSelector} from 'react-redux'
 import { fetchDataMain } from '../features/data/dataSlice'
 import axios from 'axios';
-import { useEffect} from 'react';
+// import { useEffect} from 'react';
 import Loading from './Loading';
+import styles from '../components/styles/Main.module.css'
 import { 
     // useParams 
         useNavigate,
@@ -19,17 +20,14 @@ function Main() {
     const infoRedux = useSelector(state => state.data)
     
     const { value } = infoRedux
-    
-    
+
     // const params = useParams();
     const navigate = useNavigate();
     console.log(value)
     // const zero = 'un solo fetch'
     // console.log("api??????")
-    
     // console.log(infoRedux)
 
-    
     const key = '3vIRJmcLMjl1pQ0peu0exjGVox0U3cK8bUgWRrJC';
     const mainUrl = `https://api.nasa.gov/planetary/apod?api_key=${key}&count=6`;
 
@@ -83,7 +81,7 @@ function Main() {
 
 
     return (
-        <div>
+        <div className ={styles.gradiente}>
             <div className='px-5 py-5 content-center p-6 shadow-2xl'>
                 {/* <h4>Fetch de la data solo un objeto</h4> */}
                 <button className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded' onClick={ e => handleFetch(e)}> Fetch</button>
@@ -96,10 +94,11 @@ function Main() {
                         value.map((item, i)=>{
                             return(
 
-                                <div className=' flex  m-5 flex-col  items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-white-100 dark:border-gray-400 dark:bg-gray-20 dark:hover:bg-purple-200 ' key={i}>
+                                <div className=' flex  m-5 flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-white-100 dark:border-gray-400 dark:bg-gray-20 dark:hover:bg-purple-200 '  key={i}>
                                     <div className=' flex flex-col justify-between p-10 leading-normal'>
                                         <h2 className='font-bold text-s mb-2'>{item.title}</h2>
                                         <p className='leading-5 px-1 py-1'>{item.date}</p>
+                                        {/* text base eliminar? */}
                                         <p className='leading-5 px-1 py-1' text-base>{item.explanation.slice(0,200)}...</p>
                                         <figcaption> {item.copyright}</figcaption>
                                         {/* <div>
@@ -112,8 +111,8 @@ function Main() {
                                             </span>
                                         </button>       
                                     </div>
-                                    <div>
-                                        <img SclassName='flex-none w-full relative md:rounded-r-lg' alt={item.title} src={item.hdurl} />
+                                    <div className='h-300 w-200 md:rounded-r-lg  object-fill box-content'>
+                                        <img className='flex-none  relative md:rounded-r-lg  ' alt={item.title} src={item.hdurl} />
                                     </div>
                                 </div> 
                             )
