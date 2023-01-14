@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from '../images/home.png';
+import styles from './styles/Navbar.module.css';
 
 const Navbar = () => {
     return (
+
         <div className="nav-container">
             <NavLink className="nav-home" to="/" activeClassName="active" exact>
                 <img src={logo} alt="" className="home-logo" width="50px" height="50px" />
@@ -29,6 +31,7 @@ const Navbar = () => {
                 Contact
             </NavLink>
         </div>
+
     );
 }
 
