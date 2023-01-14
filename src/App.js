@@ -26,7 +26,7 @@ function App() {
         <Route path="/agregar" element={<Agregarpage />} />
         <Route path="/my-stars" element={<Mystarspage />} />
         <Route path="/family-stars" element={<Familystarspage />} />
-        <Route path="/one-star" element={<Onestarpage />} />
+        <Route path="/one-star/:titleStar" element={<Onestarpage />} />
         <Route path="/about" element={<Aboutpage />} />
         <Route path="/contact" element={<Contactpage />} />
       </Routes>
