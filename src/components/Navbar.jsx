@@ -19,9 +19,9 @@ const Navbar = () => {
             <NavLink className="nav-family-stars" to="/family-stars" activeClassName="active">
                 Estrellas Familiares
             </NavLink>
-            <NavLink className="nav-one-star" to="/one-star" activeClassName="active">
+            {/* <NavLink className="nav-one-star" to="/one-star" activeClassName="active">
                 Una estrella
-            </NavLink>
+            </NavLink> */}
             <NavLink className="nav-about" to="/about" activeClassName="active">
                 About
             </NavLink>
