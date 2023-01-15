@@ -17,7 +17,6 @@ const Profile = () => {
       console.log(e.message);
     }
   };
-  console.log(user);
   return (
     <>
       <button
