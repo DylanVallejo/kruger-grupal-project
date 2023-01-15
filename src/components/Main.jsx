@@ -1,14 +1,71 @@
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getImages } from "../features/data/dataSlice";
 import styles from "../components/styles/Main.module.css";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
+//import { fetchDataMain } from '../features/data/dataSlice'
+//import axios from 'axios';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+// import { v4 as uuid } from 'uuid'
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+
 
 function Main() {
   const dispatch = useDispatch();
   const { entities, loading } = useSelector((state) => state.data);
 
+
+
+    // const dispatch = useDispatch();
+    // const infoRedux = useSelector(state => state.data)
+    // const { value } = infoRedux
+
+    // console.log(value)
+
+    // const navigate = useNavigate();
+
+    // const key = '3vIRJmcLMjl1pQ0peu0exjGVox0U3cK8bUgWRrJC';
+    // const mainUrl = `https://api.nasa.gov/planetary/apod?api_key=${key}&count=6`;
+
+
+
+    // const handleFetch = (e) => { 
+    //     e.preventDefault();
+    //     axios.get(mainUrl)
+    //     .then(res => {
+    //         // setFetchInfo(res.data)
+    //         dispatch(fetchDataMain(res.data))
+    //     })
+    //     .catch(err => {
+    //         console.log(err)
+    //     })
+    // }
+
+            
   useEffect(() => {
     dispatch(getImages());
     console.log(entities);
@@ -18,6 +75,12 @@ function Main() {
 
   return (
     <div className={styles.gradiente}>
+     <Carousel responsive={responsive}>
+        <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+        <div className="py-2 px-2 bg-[url('https://stsci-opo.org/STScI-01GA6KKWG229B16K4Q38CH3BXS.png')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+        <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+        <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+      </Carousel>;
       <div className="px-5 py-5 content-center p-6 shadow-2xl">
         {loading !== true ? (
           entities.map((item) => {
