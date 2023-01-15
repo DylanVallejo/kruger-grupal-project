@@ -1,5 +1,6 @@
 # kruger-grupal-project
 ## _Here you can watch our current final project for Kruger Star - FrontEnd consuming the API of the NASA and working on team._
+![Kruger Star Landing Form-01](https://user-images.githubusercontent.com/99937413/212567644-b988ed80-77de-44bf-a479-986531d02add.png)
 
 <h1>Kruger Space</h1>
 
@@ -7,11 +8,13 @@ El Cosmos es muy expenso descubre como se ve este gran misterio de la humanidad
 
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+1. [General Info](#acerca-del-proyecto)
+2. [Technologies](#lenguajes-y-herramientas)
+3. [Installation](#run-it-local)
+4. [Collaboration](#authors)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [FAQs](#faqs)
 
 <img src="https://img.shields.io/badge/MADEWITH-React-1572B6?style=for-the-badge&logo=React" height="30" />   
   <p align="left">
@@ -39,6 +42,25 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
   </p>
   
   
+  ## Run it Local 
+  
+  - Elige una carpeta root
+
+```bash
+
+ git clone https://github.com/DylanVallejo/kruger-grupal-project.git
+
+ cd kruger-grupal-project
+
+ npm install 
+ 
+ npm start 
+
+```
+  - Vscode te redirigira automaticamnete al navegador 
+  - Abrir una pestaña nueva en el localhost:3000
+  
+  
   
   ## Authors
 👤 **Edwin Cacuango**
@@ -58,6 +80,11 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
 ## Contributing
 
 [Juan Sotomayor](https://github.com/Juanse7793) - Tutor Frontend Kruger Star
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
 
