@@ -1,11 +1,11 @@
 .navbar {
   height: 60px;
-  background-color: #0a6236;
+  background-color: #07052c;
   position: relative;
+  width: 100%;
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
