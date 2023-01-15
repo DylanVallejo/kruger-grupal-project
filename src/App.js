@@ -9,29 +9,37 @@ import Aboutpage from './pages/Aboutpage';
 import Contactpage from './pages/Contactpage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import SingIn from "./pages/SingIn"
+import SingUp from "./pages/SingUp"
+import { AuthContextProvider } from "./context/AuthContext"
 
 import store from './app/store'
 import { Provider } from 'react-redux'
+import ProtectRoutes from './components/ProtectRoutes';
 
 
 function App() {
   return (
     <Provider store={store}>
-    
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/birth" element={<Birthpage />} />
-        <Route path="/agregar" element={<Agregarpage />} />
-        <Route path="/my-stars" element={<Mystarspage />} />
-        <Route path="/family-stars" element={<Familystarspage />} />
-        <Route path="/one-star" element={<Onestarpage />} />
-        <Route path="/about" element={<Aboutpage />} />
-        <Route path="/contact" element={<Contactpage />} />
-      </Routes>
-      <Footer />
-    </Router>
+      <AuthContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/birth" element={<Birthpage />} />
+            <Route path="/agregar" element={<Agregarpage />} />
+            <Route path="/my-stars" element={<ProtectRoutes><Mystarspage /></ProtectRoutes>} />
+            <Route path="/family-stars" element={<ProtectRoutes><Familystarspage /></ProtectRoutes>} />
+            <Route path="/one-star" element={<Onestarpage />} />
+            <Route path="/about" element={<Aboutpage />} />
+            <Route path="/contact" element={<Contactpage />} />
+            <Route path="/sing-in" element={<SingIn />} />
+            <Route path="/sing-up" element={<SingUp />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </AuthContextProvider>
+
     </Provider>
   );
 }
