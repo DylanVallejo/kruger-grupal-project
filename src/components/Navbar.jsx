@@ -2,10 +2,9 @@ import { NavLink } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import logo from "../images/home.png";
 import Profile from "./Profile";
-import styles from "./styles/Navbar.module.css";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
-
   const { user } = UserAuth();
   return (
     <nav className={styles.navbar}>
@@ -50,7 +49,7 @@ const Navbar = () => {
               </>
             )}
 
-              {/* <NavLink
+            {/* <NavLink
                 className={styles.navOneStar}
                 to="/one-star"
                 activeClassName="active"

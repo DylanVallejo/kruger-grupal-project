@@ -1,0 +1,17 @@
+.gradiente {
+    background: rgb(6, 39, 142);
+    background: linear-gradient(127deg, rgba(6, 39, 142, 0.8767281326593137) 25%, rgba(2, 3, 8, 0.8851314940038515) 51%, rgba(142, 7, 109, 0.848716928177521) 80%);
+}
+
+.gallery {
+    display: grid;
+    gap: 4rem;
+    grid-auto-rows: 35rem;
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+}
+
+@media (max-width:768px) {
+    .gallery {
+        display: block;
+    }
+}
