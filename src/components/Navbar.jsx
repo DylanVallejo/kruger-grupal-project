@@ -50,13 +50,13 @@ const Navbar = () => {
               </>
             )}
 
-            <NavLink
-              className={styles.navOneStar}
-              to="/one-star"
-              activeClassName="active"
-            >
-              Una estrella
-            </NavLink>
+              {/* <NavLink
+                className={styles.navOneStar}
+                to="/one-star"
+                activeClassName="active"
+              >
+                Una estrella
+              </NavLink> */}
             <NavLink
               className={styles.navAbout}
               to="/about"
