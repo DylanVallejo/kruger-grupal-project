@@ -4,7 +4,7 @@
 
 <h1>Kruger Space</h1>
 
-El Cosmos es muy expenso descubre como se ve este gran misterio de la humanidad 
+El Cosmos es muy expenso, descubre como se ve este gran misterio de la humanidad.
 
 ## 📋 Table of Contents
 1. [General Info](#acerca-del-proyecto)
@@ -23,8 +23,8 @@ El Cosmos es muy expenso descubre como se ve este gran misterio de la humanidad
 [MockUp](https://excalidraw.com/#room=23f893dbf1698e60bbc1,y4d1JmKQ_WhEqQKFUlbVzw)
 
 ## ❔ Acerca del proyecto 
-Descubre como se ve el espacio con las fotografias mas iconicas tomadas por misiones de la NASA tambien podras buscar tu fecha de nacimiento o cualquier fecha que desees 
-para saber cual fue la imagen mas relevante del momento tambien si eres un aficionado a las estrellas y descubres una nueva podras agregarla facilmento a a la coleccion actual  
+Descubre como se ve el espacio con las fotografías mas icónicas tomadas por misiones de la NASA también podrás buscar tu fecha de nacimiento o cualquier fecha que desees.
+Para saber cual fue la imagen mas relevante del momento, o también si eres un aficionado a las estrellas y descubres una nueva podrás agregarla fácilmento a la coleccion actual. 
 
 <h3 align="left">Lenguajes y Herramientas:</h3>  
 <p align="center"> 
@@ -42,7 +42,7 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
   
 ## ▶️ Run it Local 
   
-  - Elige una carpeta root
+  - Elige una carpeta root:
 
 ```bash
 
@@ -55,8 +55,8 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
  npm start 
 
 ```
-  - Vscode te redirigira automaticamnete al navegador 
-  - Abrir una pestaña nueva en el localhost:3000 
+  - Vscode te redirigirá automáticamnete al navegador.
+  - Abrirá una pestaña nueva en el localhost:3000.
   
 ## 🤝🏼 Authors
 👤 **Edwin Cacuango**
