@@ -61,7 +61,7 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
 ## 🤝🏼 Authors
 👤 **Edwin Cacuango**
 - Github: [@EdwinCacuango](https://github.com/EdwinCacuango)
-- Twitter: 
+- LinkedIn: [Edwin Cacuango](https://www.linkedin.com/mwlite/in/edwin-cacuango-cahuenas)
 
 👤 **Jorge**
 
