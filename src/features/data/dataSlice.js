@@ -22,22 +22,8 @@ export const dataSlice = createSlice({
         //agreaga estrella al objeto inicial  
         concatApiAndLocal: (state, { payload }) => {
 
-            // const add = [...state.value]
-
-            // state.push ( payload)
             console.log('hola payload')
-            // state.value.push(action.payload)
-
-            // (state, action) => {
-            //     state.push({
-            //       lnglat: action.payload,
-            //     });
-            //   }
-            // state.push(action.payload)
-
-            console.log(state.value)
-            state.value = [payload, ...state.value];
-
+            state.entities = [payload, ...state.value];
         },
 
     },

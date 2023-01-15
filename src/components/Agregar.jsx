@@ -1,8 +1,15 @@
-import {  useDispatch } from "react-redux";
 import { useState } from "react";
-import { concatApiAndLocal } from '../features/data/dataSlice'
-import { localStar } from '../features/newStar/starSlice'
 import { useNavigate } from "react-router-dom";
+
+//redux
+import {  useDispatch,useSelector } from "react-redux";
+//local start saves the star on the varaible star from redux
+import { localStar } from '../features/newStar/starSlice'
+//concactapi add a star on the variable data from redux
+import { concatApiAndLocal } from '../features/data/dataSlice'
+//
+import { addLocalStorage } from '../features/newStar/crudSlice'
+// import { useEffect } from "react";
 
 
 const Agregar = () => {
@@ -14,33 +21,33 @@ const Agregar = () => {
     const [media_type, setMediaType] = useState('');
     const [title, setTitle] = useState('');
     const [hdurl, setHdurl] = useState('');
-    const [newStar, setNewStar] = useState()
-    // const [newStar, setNewStar] = useState({
-    //     'date': date,
-    //     'explanation': explanation,
-    //     'url': url,
-    //     'media_type': media_type,
-    //     'title': title,
-    //     'hdurl': hdurl
-    // })
-    
+    const [newStar, setNewStar] = useState(null)
+ 
     const navigate = useNavigate();
     
     // const star = useSelector(state => state.star);
-    // const data = useSelector(state => state.data);
+    const local = useSelector(state => state.crud);
+    const data = useSelector(state => state.data);
+    
+    const { value } = local;
+    
+    const { value: dataApi } = data;
+    
+    
     
     const dispatch = useDispatch();
+
+    const savingLocalStar = (  actual ) => {
+        // const spread = JSON.parse(window.localStorage.getItem('myStars'))
+        window.localStorage.setItem('myStars', JSON.stringify(actual));
+        dispatch(addLocalStorage(actual))
+
+    }
     
-    // const  {value:dataLocal} = star;
     
-    // const {value:dataApi} = data;
-    
-    // setNewStar(creatingNewStar);
     
     const handleSubmit = (e) => {
-        
         e.preventDefault();
-        
         const creatingNewStar = {
             'date': date,
             'explanation': explanation,
@@ -49,27 +56,18 @@ const Agregar = () => {
             'title': title,
             'hdurl': hdurl
         }
-        
-        
-        // const newStar =  [...dataLocal, creatingNewStar]
-    
+        // crear una nueva funcion para dispatch que concatene la info actual mas el creado por el usuario
+        //manejar dos variables data se renderiza en main y datauser se renderiza en mis estrellas 
+        //data debe ser concatenado con la estrella agreda por el usuario 
         setNewStar(creatingNewStar);
         dispatch(concatApiAndLocal(creatingNewStar))
-        dispatch(localStar(creatingNewStar))
-        
+        // dispatch(localStar(creatingNewStar))
+        savingLocalStar(creatingNewStar)
         navigate('/')
-        
-            // let updateObject = [...value, ]
-            // const addStar = () => {
-            
-            // }
-            
-            // crear una nueva funcion para dispatch que concatene la info actual mas el creado por el usuario
-            //manejar dos variables data se renderiza en main y datauser se renderiza en mis estrellas 
-            //data debe ser concatenado con la estrella agreda por el usuario 
-        }
-        
-        console.log(newStar)
+    }
+
+    console.log(newStar)
+    
     const handleOnChangeFile = (e) => {
         const element = e.target;
         const file = element.files[0];
@@ -80,6 +78,7 @@ const Agregar = () => {
         };
     }
     
+    console.log(value);
     
     return (
         <div className="w-full max-w-xl mx-auto">
@@ -167,3 +166,47 @@ const Agregar = () => {
 };
 
 export default Agregar;
+
+
+  // const savingLocalStar = (saveStar) => {
+    //     // if(!newStar.find(star => star.title === )){
+            
+    //     // }
+    //     let localStorage = localStorage.getItem('myStars');
+        
+    //     setNewStar([...newStar,localStorage])
+    //     // console.log('estera')
+    //     // console.log(saveStar);
+    //     // const starObject = JSON.parse(window.localStorage.getItem('myStars')); 
+    //     // // window.localStorage.setItem('myStars', JSON.stringify(saveStar));
+    //     // dispatch(addLocalStorage(starObject))
+    //     // console.log(starObject)
+    // }
+    
+    // useEffect(() => {
+    //     let localStorage = localStorage.getItem('myStars');
+    //     // const creatingNewStar = {
+    //     //     'date': date,
+    //     //     'explanation': explanation,
+    //     //     'url': url,
+    //     //     'media_type': media_type,
+    //     //     'title': title,
+    //     //     'hdurl': hdurl
+    //     // }
+    //     // setNewStar(creatingNewStar);
+        
+    //     // let push  = [...newStar, JSON.parse() ,localStorage]
+    //     if(localStorage){
+    //         setNewStar(JSON.parse(localStorage))
+    //     }
+        
+    // }, [])
+    
+    // useEffect(() => {
+    //     localStorage.setNewStar('myStars', JSON.stringify(newStar));
+    // }, [])
+    
+    
+    
+    // const pushestrella = () =>{
+    // }
