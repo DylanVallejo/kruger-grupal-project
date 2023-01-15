@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, } from "@reduxjs/toolkit";
 
 export const dataSlice = createSlice({ 
     name: 'data',
@@ -8,21 +8,38 @@ export const dataSlice = createSlice({
     reducers: {
         
         fetchDataMain: (state, {payload} ) =>{
-            // console.log('payload')
-            // console.log(payload)
-            state.value = (payload);
-            // console.log(action)
             
-            // console.log(state)
-            // state = (action.payload);
-            // [...state, action.payload];
+            //steando el value con el fetch de la api 
+
+            state.value = (payload);
+
+        },
+        //agreaga estrella al objeto inicial  
+        concatApiAndLocal: (state, {payload} ) => {
+            
+            // const add = [...state.value]
+            
+            // state.push ( payload)
+            console.log('hola payload')
+            // state.value.push(action.payload)
+            
+            // (state, action) => {
+            //     state.push({
+            //       lnglat: action.payload,
+            //     });
+            //   }
+            // state.push(action.payload)
+            
+            console.log(state.value)
+            state.value = [payload, ...state.value ];
+            
         },
         
     }
     
 })
 
-export const { fetchDataMain } = dataSlice.actions
+export const { fetchDataMain,concatApiAndLocal } = dataSlice.actions
 
 //debo exportar el reducer de dataSlice
 export default dataSlice.reducer
