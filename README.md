@@ -56,9 +56,7 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
 
 ```
   - Vscode te redirigira automaticamnete al navegador 
-  - Abrir una pestaña nueva en el localhost:3000
-  
-  
+  - Abrir una pestaña nueva en el localhost:3000 
   
 ## 🤝🏼 Authors
 👤 **Edwin Cacuango**
@@ -67,8 +65,8 @@ para saber cual fue la imagen mas relevante del momento tambien si eres un afici
 
 👤 **Jorge**
 
-- GitHub: [@cijei21](https://github.com/jeici21)
-- Twitter: 
+- GitHub: [@jeici21](https://github.com/jeici21)
+- Twitter: [@cijei21](https://twitter.com/cijei21)
 
 👤 **Dylan Vallejo**
 
