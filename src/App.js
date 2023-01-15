@@ -30,7 +30,7 @@ function App() {
             <Route path="/agregar" element={<Agregarpage />} />
             <Route path="/my-stars" element={<ProtectRoutes><Mystarspage /></ProtectRoutes>} />
             <Route path="/family-stars" element={<ProtectRoutes><Familystarspage /></ProtectRoutes>} />
-            <Route path="/one-star" element={<Onestarpage />} />
+            <Route path="/one-star/:titleStar" element={<Onestarpage />} />
             <Route path="/about" element={<Aboutpage />} />
             <Route path="/contact" element={<Contactpage />} />
             <Route path="/sing-in" element={<SingIn />} />
