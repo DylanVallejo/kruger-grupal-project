@@ -8,6 +8,7 @@ import {
     // useParams 
         useNavigate,
     } from 'react-router-dom';
+
 // import { v4 as uuid } from 'uuid'
 
 
@@ -54,16 +55,8 @@ function Main() {
     
     // useEffect(() => {
     
-    //     axios.get(mainUrl)
-    //     .then(res => {
-    //         // setFetchInfo(res.data)
-    //         dispatch(fetchDataMain(res.data))
-    //     })
-    //     .catch(err => {
-    //         console.log(err)
-    //     })
-    //    // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, [zero]);
+        
+    // }, [value]);
     
     // useEffect(() => {
     
