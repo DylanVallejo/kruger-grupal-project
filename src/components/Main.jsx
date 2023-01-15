@@ -1,43 +1,50 @@
 import { useDispatch ,useSelector} from 'react-redux'
 import { fetchDataMain } from '../features/data/dataSlice'
 import axios from 'axios';
-// import { useEffect} from 'react';
 import Loading from './Loading';
 import styles from '../components/styles/Main.module.css'
-import { 
-    // useParams 
-        useNavigate,
-    } from 'react-router-dom';
+import { useNavigate,} from 'react-router-dom';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 
 // import { v4 as uuid } from 'uuid'
 
-
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
 
 function Main() {
 
-    // const [fetchInfo, setFetchInfo] = useState([]);
-    
+
     const dispatch = useDispatch();
     const infoRedux = useSelector(state => state.data)
-    
     const { value } = infoRedux
 
-    // const params = useParams();
-    const navigate = useNavigate();
     console.log(value)
-    // const zero = 'un solo fetch'
-    // console.log("api??????")
-    // console.log(infoRedux)
+
+    const navigate = useNavigate();
 
     const key = '3vIRJmcLMjl1pQ0peu0exjGVox0U3cK8bUgWRrJC';
     const mainUrl = `https://api.nasa.gov/planetary/apod?api_key=${key}&count=6`;
 
-    // const data = useSelector((state) => state.data.value)
-    // const dispatch = useDispatch();
 
-    // const handleValue = () =>{
-    //     dispatch(fetchData())
-    // }
 
     const handleFetch = (e) => { 
         e.preventDefault();
@@ -50,13 +57,6 @@ function Main() {
             console.log(err)
         })
     }
-    
-    // handleFetch();
-    
-    // useEffect(() => {
-    
-        
-    // }, [value]);
     
     // useEffect(() => {
     
@@ -75,6 +75,17 @@ function Main() {
 
     return (
         <div className ={styles.gradiente}>
+            
+            <Carousel responsive={responsive}>
+                <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+                <div className="py-2 px-2 bg-[url('https://stsci-opo.org/STScI-01GA6KKWG229B16K4Q38CH3BXS.png')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+
+                <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+
+                <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
+
+            </Carousel>;
+
             <div className='px-5 py-5 content-center p-6 shadow-2xl'>
                 {/* <h4>Fetch de la data solo un objeto</h4> */}
                 <button className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded' onClick={ e => handleFetch(e)}> Fetch</button>
