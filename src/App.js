@@ -39,7 +39,6 @@ function App() {
           <Footer />
         </Router>
       </AuthContextProvider>
-
     </Provider>
   );
 }

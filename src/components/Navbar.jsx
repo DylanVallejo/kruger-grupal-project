@@ -5,6 +5,7 @@ import Profile from "./Profile";
 import styles from "./styles/Navbar.module.css";
 
 const Navbar = () => {
+
   const { user } = UserAuth();
   return (
     <nav className={styles.navbar}>
