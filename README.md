@@ -67,6 +67,7 @@ Para saber cual fue la imagen mas relevante del momento, o también si eres un a
 
 - GitHub: [@jeici21](https://github.com/jeici21)
 - Twitter: [@cijei21](https://twitter.com/cijei21)
+- LinkedIn: [Jorge Castro](https://www.linkedin.com/in/jorge-castro-vargas-7242a8129)
 
 👤 **Dylan Vallejo**
 
