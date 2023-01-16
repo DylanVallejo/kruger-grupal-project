@@ -20,7 +20,7 @@ const Profile = ({ addstyles }) => {
   return (
     <>
       <button
-        className={`bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm p-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ${addstyles}`}
+        className={`text-white active:bg-orange-600 font-bold uppercase text-sm p-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ${addstyles}`}
         type="button"
         onClick={() => setShowModal(true)}
       >

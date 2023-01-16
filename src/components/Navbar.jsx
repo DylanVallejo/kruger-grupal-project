@@ -101,7 +101,7 @@ export const NavMobile = () => {
           Contact
         </NavLink>
       </div>
-      <Profile addstyles="border rounded bg-transparent border-[0] shadow-none flex items-center justify-center gap-2 text-xl text-center text-black font-semibold" />
+      <Profile addstyles="border rounded bg-none border-[0] shadow-none flex items-center justify-center gap-2 text-xl text-center text-black font-semibold" />
     </nav>
   );
 };
