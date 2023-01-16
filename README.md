@@ -15,10 +15,11 @@ El universo es enorme y probablemente infinito, con nuestro website podrás apre
 3. [Technologies](#lenguajes-y-herramientas)
 4. [Installation](#run-it-local)
 5. [Walkthrough](#walkthrough)
-6. [Collaboration](#authors)
-7. [Contributing](#contributing)
-8. [Agradecimientos](#agradecimientos)
-9. [License](#license)
+6. [Despliegue](#despliegue)
+7. [Collaboration](#authors)
+8. [Contributing](#contributing)
+9. [Agradecimientos](#agradecimientos)
+10. [License](#license)
 
 <p style="text-align: center;">
   <img src="https://img.shields.io/badge/MADEWITH-React-1572B6?style=for-the-badge&logo=React" height="30">
