@@ -30,6 +30,9 @@ El universo es enorme y probablemente infinito, con nuestro website podrás apre
 - _Generado con Xcalidraw_
 [MockUp](https://excalidraw.com/#room=23f893dbf1698e60bbc1,y4d1JmKQ_WhEqQKFUlbVzw)
 
+![image](https://user-images.githubusercontent.com/99937413/212702392-a265b933-c923-4595-b8bc-fc3770f5ed9e.png)
+
+
 ## Acerca del proyecto
 
 Descubre como se ve el espacio con las fotografías mas icónicas tomadas por misiones de la NASA, mostrándolas en base a su relevancia.
