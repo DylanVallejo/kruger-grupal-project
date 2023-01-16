@@ -8,7 +8,7 @@ const Onestarpage = () => {
   const { entities } = useSelector((state) => state.data);
 
   return (
-    <Layout aditionalStyles="min-h-screen min-w-screen">
+    <Layout aditionalStyles="min-h-screen min-w-screen grid">
       {entities
         .filter((item) => {
           if (item.title.toLowerCase().includes(titleStar.toLowerCase())) {
@@ -19,7 +19,7 @@ const Onestarpage = () => {
           return (
             <div
               key={index}
-              className="h-full text-white mx-8 mx-auto my-8 md:my-0 md:flex md:items-center md:justify-around md:gap-20"
+              className="h-full text-white mx-8 my-8 md:mx-16 md:place-self-center md:flex md:items-center md:justify-around md:gap-20"
             >
               <div className="md:w-1/2">
                 <img
@@ -44,7 +44,7 @@ const Onestarpage = () => {
                   </p>
                 </div>
 
-                <p className="text-base my-3 md:mr-15 md:text-lg leading-relaxed">
+                <p className="text-base my-3 md:text-lg leading-relaxed">
                   {detalles.explanation}
                 </p>
               </div>
