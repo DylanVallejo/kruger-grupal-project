@@ -77,8 +77,9 @@ npm start
 Vscode te redirigirá automáticamente al navegador y abrirá una pestaña nueva en el puerto 3000.
 
 ## 🔄️ Walkthrough
+
 ### SearchBar #
-![serachbargif](https://user-images.githubusercontent.com/99937413/212599147-76ddfb42-76c1-47fe-99b7-110db7934d64.gif)
+![searchbargif](https://user-images.githubusercontent.com/99937413/212599147-76ddfb42-76c1-47fe-99b7-110db7934d64.gif)
 
 Aquí va el funcionamiento de la página.
   
@@ -99,6 +100,10 @@ Aquí va el funcionamiento de la página.
 
 - GitHub: [Dylan Vallejo](https://github.com/DylanVallejo)
 - LinkedIn: [Dylan Vallejo](https://www.linkedin.com/in/dylan-vallejo)
+
+### Cronograma de planeación
+
+<img src="kanbanboard.jpeg" width="50%" height="50%">
 
 ## 🙏🏼 Contributing
 
