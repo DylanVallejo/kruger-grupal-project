@@ -40,7 +40,7 @@ const Homepage = () => {
 
   const navigate = useNavigate();
   return (
-    <div className={`${styles.gradiente} min-h-screen min-w-screen`}>
+    <div className="gradiente min-h-screen min-w-screen">
       {/* <Carousel responsive={responsive}>
         <div className="py-2 px-2 bg-[url('https://smd-prod.s3.amazonaws.com/ciencia-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/Twitter_1.png?itok=tOBkMZ0g')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
         <div className="py-2 px-2 bg-[url('https://stsci-opo.org/STScI-01GA6KKWG229B16K4Q38CH3BXS.png')] object-scale-down h-48 w-96 bg-auto bg-no-repeat bg-center  bg-cover"></div>
