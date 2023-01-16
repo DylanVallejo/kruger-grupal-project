@@ -4,35 +4,38 @@
 
 ![Kruger Star Landing Form-01](https://user-images.githubusercontent.com/99937413/212567644-b988ed80-77de-44bf-a479-986531d02add.png)
 
-<h1 style="text-align: center;">🌟 Kruger Space</h1>
+<h1 style="text-align: center;">🌟 Kruger Space 🌚</h1>
 
 El universo es enorme y probablemente infinito, con nuestro website podrás aprender un poco más sobre él.
 
-## 📋 Table of Contents
+## Table of Contents
 
-1. [General Info](#acerca-del-proyecto)
-2. [Technologies](#lenguajes-y-herramientas)
-3. [Installation](#run-it-local)
-4. [Walkthrough](#funcionamiento)
-5. [Collaboration](#authors)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [FAQs](#faqs)
+1. [Mockup](#mockup)
+2. [General Info](#acerca-del-proyecto)
+3. [Technologies](#lenguajes-y-herramientas)
+4. [Installation](#run-it-local)
+5. [Walkthrough](#walkthrough)
+6. [Collaboration](#authors)
+7. [Contributing](#contributing)
+8. [Agradecimientos](#agradecimientos)
+9. [License](#license)
 
 <p style="text-align: center;">
   <img src="https://img.shields.io/badge/MADEWITH-React-1572B6?style=for-the-badge&logo=React" height="30">
   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
 </p>
 
+## Mockup
+- _Generado con Xcalidraw_
 [MockUp](https://excalidraw.com/#room=23f893dbf1698e60bbc1,y4d1JmKQ_WhEqQKFUlbVzw)
 
-## ❔ Acerca del proyecto
+## Acerca del proyecto
 
 Descubre como se ve el espacio con las fotografías mas icónicas tomadas por misiones de la NASA, mostrándolas en base a su relevancia.
 También podrás buscar tu fecha de nacimiento o cualquier fecha que desees.
 Para saber cuál fue la imagen mas relevante del momento, o también si eres un aficionado a las estrellas y descubres una nueva podrás agregarla fácilmente a la colección actual.
 
-## 🔧 Lenguajes y Herramientas
+## Lenguajes y Herramientas
 
 <p style="text-align: center;">
   <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></a>
@@ -47,7 +50,7 @@ Para saber cuál fue la imagen mas relevante del momento, o también si eres un 
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/></a>
 </p>
   
-## ▶️ Run it Local
+## Run it Local
   
 1. Elige una carpeta root:
 
@@ -76,14 +79,24 @@ npm start
 
 Vscode te redirigirá automáticamente al navegador y abrirá una pestaña nueva en el puerto 3000.
 
-## 🔄️ Walkthrough
+## Walkthrough 
 
 ### SearchBar #
+
 ![searchbargif](https://user-images.githubusercontent.com/99937413/212599147-76ddfb42-76c1-47fe-99b7-110db7934d64.gif)
 
-Aquí va el funcionamiento de la página.
+### About #
+
+![Screenshot_20230116_015545](https://user-images.githubusercontent.com/99937413/212616407-a39b2f97-cce3-423d-90a4-9d24073a5f46.png)
+
+### Cronograma de planeación #
+- _Kanban Board_
+
+<img src="kanbanboard.jpeg" width="50%" height="50%">
+
+# _Aquí va el funcionamiento de la página._
   
-## 🤝🏼 Authors
+## Authors
 
 👤 **Edwin Cacuango**
 
@@ -101,14 +114,20 @@ Aquí va el funcionamiento de la página.
 - GitHub: [Dylan Vallejo](https://github.com/DylanVallejo)
 - LinkedIn: [Dylan Vallejo](https://www.linkedin.com/in/dylan-vallejo)
 
-### Cronograma de planeación
-
-<img src="kanbanboard.jpeg" width="50%" height="50%">
-
-## 🙏🏼 Contributing
+## Contributing
 
 [Juan Sotomayor](https://github.com/Juanse7793) - Tutor Frontend Kruger Star
 
-## 📃 License
+## Agradecimientos
+- _Agradecimientos especiales a Kruger por permitirnos tener una experiencia disruptiva que cambiara nuestras vidas ❤️_
+[Kruger Corp](https://www.instagram.com/krugercorp/)
+- _Al ingeniero Jaime por predicar Java como lenguaje favorito del BackEnd 🙌_
+[Jaime Sagayo](https://www.linkedin.com/in/jaime-sayago-heredia-65634253/?originalSubdomain=ec) - Tutor BackEnd Kruger Star
+- _Al ingeniero Juan por enseñarnos el trabajo bajo presion y sus clases unicas 🤓_
+[Juan Sotomayor](https://www.linkedin.com/in/juansebastiansotomayor/) - Tutor Frontend Kruger Star
+
+
+
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
