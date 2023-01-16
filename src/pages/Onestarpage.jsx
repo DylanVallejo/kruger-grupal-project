@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { BsPersonCircle, BsFillCalendarDateFill } from "react-icons/bs";
 import Layout from "../components/Layout";
 
