@@ -23,7 +23,6 @@ function App() {
     <Provider store={store}>
       <AuthContextProvider>
         <Router>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/birth" element={<Birthpage />} />
@@ -36,7 +35,6 @@ function App() {
             <Route path="/sing-in" element={<SingIn />} />
             <Route path="/sing-up" element={<SingUp />} />
           </Routes>
-          <Footer />
         </Router>
       </AuthContextProvider>
     </Provider>
