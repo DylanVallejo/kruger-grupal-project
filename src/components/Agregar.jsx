@@ -66,7 +66,6 @@ const Agregar = () => {
         navigate('/')
     }
 
-    console.log(newStar)
     
     const handleOnChangeFile = (e) => {
         const element = e.target;
@@ -78,7 +77,6 @@ const Agregar = () => {
         };
     }
     
-    console.log(value);
     
     return (
         <div className="w-full max-w-xl mx-auto py-10 px-10 h-auto ">

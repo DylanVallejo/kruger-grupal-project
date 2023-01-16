@@ -5,8 +5,8 @@ export const crudSlice = createSlice({
     initialState: JSON.parse(window.localStorage.getItem('myStars')) || [],
     reducers:{
         addLocalStorage:(state, {payload}) => {
-
-            state.push(payload);
+            
+            // state.push(payload);
             console.log('local storage valor actual ')
         },
     }

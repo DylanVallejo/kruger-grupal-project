@@ -8,7 +8,7 @@ export const starSlice = createSlice({
     reducers: {
         
         localStar: (state, {payload} ) =>{
-            // console.log('payload')
+            console.log('payload star')
             // console.log(payload)
             state.value = (payload);
             // console.log(action)
