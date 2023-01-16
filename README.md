@@ -77,6 +77,8 @@ npm start
 Vscode te redirigirá automáticamente al navegador y abrirá una pestaña nueva en el puerto 3000.
 
 ## 🔄️ Walkthrough
+### SearchBar #
+![serachbargif](https://user-images.githubusercontent.com/99937413/212599147-76ddfb42-76c1-47fe-99b7-110db7934d64.gif)
 
 Aquí va el funcionamiento de la página.
   
