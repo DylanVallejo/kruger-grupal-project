@@ -1,12 +1,10 @@
 .navbar {
   height: 60px;
   background-color: #07052c;
-  position: relative;
   width: 100%;
 }
 
 .container {
-  margin: 0 auto;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
@@ -22,7 +20,13 @@
   color: white;
 }
 
-.navBirth:hover, .navAgregar:hover, .navStars:hover, .navFamilyStars:hover, .navOneStar:hover, .navAbout:hover, .navContact:hover {
+.navBirth:hover,
+.navAgregar:hover,
+.navStars:hover,
+.navFamilyStars:hover,
+.navOneStar:hover,
+.navAbout:hover,
+.navContact:hover {
   color: aqua;
 }
 

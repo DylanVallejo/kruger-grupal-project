@@ -9,43 +9,44 @@ const Navbar = ({ set }) => {
   const { user } = UserAuth();
   return (
     <>
-      <nav className={`hidden md:flex ${styles.navbar}`}>
-        <div className={styles.container}>
-          <div className={styles.logo}>
-            <NavLink className="text-white" to="/">
-              <AiFillHome />
+      <nav
+        className={`hidden w-screen md:flex items-center justify-between px-4 ${styles.navbar}`}
+      >
+        <NavLink className="text-white text-2xl" to="/">
+          <AiFillHome />
+        </NavLink>
+
+        <div className="flex items-center gap-4 justify-around">
+          <div className={styles.navElements}>
+            <NavLink className={styles.navBirth} to="/birth">
+              Su nacimiento
+            </NavLink>
+            <NavLink className={styles.navAgregar} to="/agregar">
+              Agregar
+            </NavLink>
+            {Object.entries(user).length !== 0 && (
+              <>
+                <NavLink className={styles.navStars} to="/my-stars">
+                  Mis Estrellas
+                </NavLink>
+                <NavLink className={styles.navFamilyStars} to="/family-stars">
+                  Estrellas Familiares
+                </NavLink>
+              </>
+            )}
+
+            <NavLink className={styles.navAbout} to="/about">
+              About
+            </NavLink>
+            <NavLink className={styles.navContact} to="/contact">
+              Contact
             </NavLink>
           </div>
-          <div className="flex items-center gap-4 justify-around">
-            <div className={styles.navElements}>
-              <NavLink className={styles.navBirth} to="/birth">
-                Su nacimiento
-              </NavLink>
-              <NavLink className={styles.navAgregar} to="/agregar">
-                Agregar
-              </NavLink>
-              {Object.entries(user).length !== 0 && (
-                <>
-                  <NavLink className={styles.navStars} to="/my-stars">
-                    Mis Estrellas
-                  </NavLink>
-                  <NavLink className={styles.navFamilyStars} to="/family-stars">
-                    Estrellas Familiares
-                  </NavLink>
-                </>
-              )}
-
-              <NavLink className={styles.navAbout} to="/about">
-                About
-              </NavLink>
-              <NavLink className={styles.navContact} to="/contact">
-                Contact
-              </NavLink>
-            </div>
-            <Profile />
-          </div>
+          <Profile />
         </div>
       </nav>
+
+      {/* Nav for mobile */}
       <nav className="md:hidden h-12 bg-[#07052c] w-screen flex justify-between items-center px-4">
         <button className="text-3xl">
           <NavLink className="text-white" to="/">
