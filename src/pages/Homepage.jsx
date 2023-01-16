@@ -33,8 +33,10 @@ const Homepage = () => {
   const { entities, loading } = useSelector((state) => state.data);
 
   useEffect(() => {
-    dispatch(getImages());
-  }, []);
+    if (entities.length < 1) {
+      dispatch(getImages());
+    }
+  }, [entities]);
 
   const navigate = useNavigate();
   return (
