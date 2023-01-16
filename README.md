@@ -6,17 +6,18 @@
 
 <h1 style="text-align: center;">🌟 Kruger Space</h1>
 
-El Cosmos es muy expenso, descubre como se ve este gran misterio de la humanidad.
+El universo es enorme y probablemente infinito, con nuestro website podrás aprender un poco más sobre él.
 
 ## 📋 Table of Contents
 
 1. [General Info](#acerca-del-proyecto)
 2. [Technologies](#lenguajes-y-herramientas)
 3. [Installation](#run-it-local)
-4. [Collaboration](#authors)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [FAQs](#faqs)
+4. [Walkthrough](#funcionamiento)
+5. [Collaboration](#authors)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [FAQs](#faqs)
 
 <p style="text-align: center;">
   <img src="https://img.shields.io/badge/MADEWITH-React-1572B6?style=for-the-badge&logo=React" height="30">
@@ -27,8 +28,9 @@ El Cosmos es muy expenso, descubre como se ve este gran misterio de la humanidad
 
 ## ❔ Acerca del proyecto
 
-Descubre como se ve el espacio con las fotografías mas icónicas tomadas por misiones de la NASA también podrás buscar tu fecha de nacimiento o cualquier fecha que desees.
-Para saber cual fue la imagen mas relevante del momento, o también si eres un aficionado a las estrellas y descubres una nueva podrás agregarla fácilmento a la coleccion actual.
+Descubre como se ve el espacio con las fotografías mas icónicas tomadas por misiones de la NASA, mostrándolas en base a su relevancia.
+También podrás buscar tu fecha de nacimiento o cualquier fecha que desees.
+Para saber cuál fue la imagen mas relevante del momento, o también si eres un aficionado a las estrellas y descubres una nueva podrás agregarla fácilmente a la colección actual.
 
 ## 🔧 Lenguajes y Herramientas
 
@@ -47,21 +49,36 @@ Para saber cual fue la imagen mas relevante del momento, o también si eres un a
   
 ## ▶️ Run it Local
   
-Elige una carpeta root:
+1. Elige una carpeta root:
 
-```bash
-
- git clone https://github.com/DylanVallejo/kruger-grupal-project.git
-
- cd kruger-grupal-project
-
- npm install 
- 
- npm start 
-
+```sh
+bash
 ```
 
-Vscode te redirigirá automáticamnete al navegador y abrirá una pestaña nueva en el puerto 3000.
+1. Clona el repositorio:
+
+```sh
+git clone https://github.com/DylanVallejo/kruger-grupal-project.git
+```
+
+2. Dirígete al directorio del proyecto:
+
+```console
+cd kruger-grupal-project
+```
+
+3. Instala y ejecuta el proyecto:
+
+```console
+npm install
+npm start
+```
+
+Vscode te redirigirá automáticamente al navegador y abrirá una pestaña nueva en el puerto 3000.
+
+## 🔄️ Walkthrough
+
+Aquí va el funcionamiento de la página.
   
 ## 🤝🏼 Authors
 
