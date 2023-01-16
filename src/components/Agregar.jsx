@@ -81,11 +81,11 @@ const Agregar = () => {
     console.log(value);
     
     return (
-        <div className="w-full max-w-xl mx-auto">
+        <div className="w-full max-w-xl mx-auto py-10 px-10 h-auto ">
             <form onSubmit={handleSubmit} className='w-full max-w-sm'>
                 <div className="md:flex md:items-center mb-6">
                     <div className="md:w-1/4">
-                        <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-date">
+                        <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-3" htmlFor="inline-date">
                             Date
                         </label>
                     </div>
@@ -139,9 +139,11 @@ const Agregar = () => {
                 {/* jola */}
                 <div className="md:flex md:items-center mb-6">
                     <div className="md:w-1/3">
-                        <label htmlFor='hdurl'   className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+                        <label htmlFor='hdurl'   className="lg:block md:inline-block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
                             Upload HDimg
                         </label>
+                        <input type="submit" value="Register Star" className=" px-2 mx-auto bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded  md:text-center" />
+                        
                     </div>
                     <div className="md:w-3/3">
                         <input 
@@ -155,11 +157,9 @@ const Agregar = () => {
                     </div>
                     
                 </div>
-                <div className="md:flex md:items-center mb-6">
-                    
-                    <div>{!!hdurl ? <img src={hdurl} alt="estrella" className="h-60" /> : ""}</div>
+                <div className="md:flex md:items-center mb-6 ">
+                    <div>{!!hdurl ? <img src={hdurl} alt="estrella" className="lg:h-52 sm:h-20 " /> : ""}</div>
                 </div>
-                <input type="submit" value="Register Star" className="mx-auto" />
             </form> 
         </div>
     );

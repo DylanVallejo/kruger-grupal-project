@@ -20,7 +20,7 @@ const About = () => {
           <div className={style.card}>
             <img src={dylan} alt="Dylan" className={style.image1} />
             <div className={style.container}>
-              <h2>Dylan Vallejo</h2>
+              <h2 className={style.headerNameAbout}>Dylan Vallejo</h2>
               <p className={style.title}>Programador</p>
               <p>Encargado del funcionamiento de la página y de los estilos.</p>
               <div>
@@ -33,7 +33,7 @@ const About = () => {
           <div className={style.card}>
             <img src={edwin} alt="Edwin" className={style.image2} />
             <div className={style.container}>
-              <h2>Edwin Cacuango</h2>
+              <h2 className={style.headerNameAbout}>Edwin Cacuango</h2>
               <p className={style.title}>Programador</p>
               <p>
                 Encargado de los procedimientos CRUD y de la implementación de
@@ -49,7 +49,7 @@ const About = () => {
           <div className={style.card}>
             <img src={jorge} alt="Jorge" className={style.image3} />
             <div className={style.container}>
-              <h2>Jorge Castro</h2>
+              <h2 className={style.headerNameAbout}>Jorge Castro</h2>
               <p className={style.title}>Programador</p>
               <p>Encargado del diseño de determinadas páginas del sitio web.</p>
               <div>
