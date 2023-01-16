@@ -51,6 +51,7 @@ const Contact = () => {
         onSubmit={(e) => {
           onSubmitHandler(e);
         }}
+        className={style.formContainer}
       >
         <input
           type="text"
