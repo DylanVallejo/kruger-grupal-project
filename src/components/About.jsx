@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className={style.aboutContainer}>
       <div className={style.aboutSection}>
-        <h1>Acerca de nosotros</h1>
+        <h2>Acerca de nosotros</h2>
         <p>
           Este website fue realizado con mucho cariño por nosotros, de forma
           totalmente remota. Esperamos que su paseo por este website haya sido
@@ -24,7 +24,7 @@ const About = () => {
               <p className={style.title}>Programador</p>
               <p>Encargado del funcionamiento de la página y de los estilos.</p>
               <div>
-                <a href="https://github.com/DylanVallejo">Github</a>
+                <a href="https://github.com/DylanVallejo" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const About = () => {
                 Redux.
               </p>
               <div>
-                <a href="https://github.com/EdwinCacuango">Github</a>
+                <a href="https://github.com/EdwinCacuango" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ const About = () => {
               <p className={style.title}>Programador</p>
               <p>Encargado del diseño de determinadas páginas del sitio web.</p>
               <div>
-                <a href="https://github.com/jeici21">Github</a>
+                <a href="https://github.com/jeici21" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
