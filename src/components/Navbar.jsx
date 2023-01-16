@@ -19,7 +19,7 @@ const Navbar = ({ set }) => {
         <div className="flex items-center gap-4 justify-around">
           <div className={styles.navElements}>
             <NavLink className={styles.navBirth} to="/birth">
-              Su nacimiento
+              Busca tu imagen
             </NavLink>
             <NavLink className={styles.navAgregar} to="/agregar">
               Agregar
@@ -28,9 +28,6 @@ const Navbar = ({ set }) => {
               <>
                 <NavLink className={styles.navStars} to="/my-stars">
                   Mis Estrellas
-                </NavLink>
-                <NavLink className={styles.navFamilyStars} to="/family-stars">
-                  Estrellas Familiares
                 </NavLink>
               </>
             )}
