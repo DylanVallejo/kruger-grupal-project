@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getImages } from "../features/data/dataSlice";
 import styles from "../styles/Main.module.css";
@@ -32,8 +32,8 @@ const responsive = {
 const Homepage = () => {
   const dispatch = useDispatch();
   const { entities, loading } = useSelector((state) => state.data);
-  
-  const [search, setSearch] = useState('')
+
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     if (entities.length < 1) {
@@ -42,12 +42,16 @@ const Homepage = () => {
   }, [entities]);
 
   return (
-
     <Layout aditionalStyles="min-h-screen min-w-screen">
-
-    <div className="gradiente min-h-screen min-w-screen ">
-      <form className="flex py-2 px-5 w-400" >
-        <input onChange={e=>setSearch(e.target.value)} type="text" id="simple-search" className="w-1/3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-800 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required/>
+      <form className="flex py-2 px-5 w-400">
+        <input
+          onChange={(e) => setSearch(e.target.value)}
+          type="text"
+          id="simple-search"
+          className="w-1/3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-800 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Search"
+          required
+        />
         {/* <button className="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button> */}
       </form>
 
@@ -62,14 +66,19 @@ const Homepage = () => {
         className={`px-5 py-5 content-center p-6 shadow-2xl ${styles.gallery}`}
       >
         {loading !== true ? (
-        entities.filter((val)=>{
-          if (search === " " ){
-            return <Loading />
-          }else if (val.title.toLowerCase().includes(search.toLowerCase())){
-            return val
-          }}).map((item) => {
-            return <PlanetCard item={item} key={item.title} />;
-          })
+          entities
+            .filter((val) => {
+              if (search === " ") {
+                return <Loading />;
+              } else if (
+                val.title.toLowerCase().includes(search.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((item) => {
+              return <PlanetCard item={item} key={item.title} />;
+            })
         ) : (
           <Loading />
         )}
