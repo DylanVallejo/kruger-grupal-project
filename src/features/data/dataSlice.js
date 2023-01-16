@@ -22,8 +22,13 @@ export const dataSlice = createSlice({
         //agreaga estrella al objeto inicial  
         concatApiAndLocal: (state, { payload }) => {
 
+            console.log(state.value)
+            state.value = [payload, ...state.value];
+
+
             console.log('hola payload')
             state.entities = [payload, ...state.value];
+
         },
 
     },
@@ -33,7 +38,7 @@ export const dataSlice = createSlice({
         },
         [getImages.fulfilled]: (state, { payload }) => {
             state.loading = false
-            state.entities = payload
+            state.entities = [...payload]
         },
         [getImages.rejected]: (state) => {
             state.loading = false
