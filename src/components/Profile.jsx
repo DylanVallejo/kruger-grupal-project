@@ -3,7 +3,7 @@ import { useNavigate, NavLink } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import { BsFillPersonFill } from "react-icons/bs";
 
-const Profile = () => {
+const Profile = ({ addstyles }) => {
   const { user, logout } = UserAuth();
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
@@ -20,11 +20,11 @@ const Profile = () => {
   return (
     <>
       <button
-        className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm p-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className={`bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm p-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ${addstyles}`}
         type="button"
         onClick={() => setShowModal(true)}
       >
-        <BsFillPersonFill className="w-8 h-8" />
+        <BsFillPersonFill className="w-8 h-8" /> {addstyles && <p>Mi cuenta</p>}
       </button>
       {showModal ? (
         <>

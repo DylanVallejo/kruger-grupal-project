@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
+import Layout from "../components/Layout";
 import { UserAuth } from "../context/AuthContext";
 
 const SingIn = () => {
@@ -29,7 +30,7 @@ const SingIn = () => {
     }
   };
   return (
-    <div className="text-center my-10">
+    <Layout aditionalStyles="text-center">
       <h1 className="my-4 text-4xl">Inicia sesión</h1>
       <form
         onSubmit={formHandler}
@@ -73,7 +74,7 @@ const SingIn = () => {
           aquí
         </NavLink>
       </p>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,13 +1,14 @@
 import { useSelector } from "react-redux";
 import { NavLink, useParams } from "react-router-dom";
 import { BsPersonCircle, BsFillCalendarDateFill } from "react-icons/bs";
+import Layout from "../components/Layout";
 
 const Onestarpage = () => {
   const { titleStar } = useParams();
   const { entities } = useSelector((state) => state.data);
 
   return (
-    <div className="gradiente md:h-screen md:px-20">
+    <Layout className="gradiente md:h-screen md:px-20">
       {entities
         .filter((item) => {
           if (item.title.toLowerCase().includes(titleStar.toLowerCase())) {
@@ -48,7 +49,7 @@ const Onestarpage = () => {
             </div>
           );
         })}
-    </div>
+    </Layout>
   );
 };
 export default Onestarpage;

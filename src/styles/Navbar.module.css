@@ -13,12 +13,7 @@
   align-items: center;
   height: 100%;
 }
-.logo {
-  display: flex;
-  align-items: flex-start;
-  width: 40px;
-  height: 40px;
-}
+
 
 .navElements {
   display: flex;

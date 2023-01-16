@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import Layout from "../components/Layout";
 import { UserAuth } from "../context/AuthContext";
 
 const SingUp = () => {
@@ -28,7 +29,7 @@ const SingUp = () => {
     }
   };
   return (
-    <div className="text-center my-10">
+    <Layout aditionalStyles="text-center my-10">
       <h1 className="my-4 text-4xl">Crea una cuenta</h1>
       <form
         onSubmit={formHandler}
@@ -72,7 +73,7 @@ const SingUp = () => {
           aquí
         </NavLink>
       </p>
-    </div>
+    </Layout>
   );
 };
 
