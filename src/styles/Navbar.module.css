@@ -1,0 +1,40 @@
+.navbar {
+  height: 60px;
+  background-color: #07052c;
+  width: 100%;
+}
+
+.container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+.navElements {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+
+.navBirth:hover,
+.navAgregar:hover,
+.navStars:hover,
+.navFamilyStars:hover,
+.navOneStar:hover,
+.navAbout:hover,
+.navContact:hover {
+  color: aqua;
+}
+
+.navBirth,
+.navAgregar,
+.navStars,
+.navFamilyStars,
+.navOneStar,
+.navAbout {
+  margin-right: 60px;
+}
