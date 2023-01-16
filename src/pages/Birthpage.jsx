@@ -27,11 +27,9 @@ const Birthpage = () => {
         {fetch.length === 0 ? (
           <div className="text-center">
             <h1 className="my-3 text-2xl md:my-6 md:text-6xl">
-              Buscador de fechas
+              Buscador de imágenes
             </h1>
-            <p className=" md:text-2xl">
-              ¿Cuál es tu fotografía de nacimiento?
-            </p>
+            <p className=" md:text-2xl">Ingresa tu fecha de nacimiento</p>
             <form
               onSubmit={handleSubmit}
               className="px-6 my-10 flex flex-col md:flex-row items-center justify-center gap-4 "
@@ -60,18 +58,18 @@ const Birthpage = () => {
                     {item.title}
                   </h1>
                   <div className="flex items-center justify-between md:text-2xl">
-                    <p className=" flex items-center gap-2 md:my-4">
+                    <div className=" flex items-center gap-2 md:my-4">
                       <div className="bg-white rounded-full p-2">
                         <FaBirthdayCake className="text-pink-600" />
                       </div>
-                      {item.date}
-                    </p>
-                    <p className="hidden md:flex items-center gap-2">
+                      <p>{item.date}</p>
+                    </div>
+                    <div className="hidden md:flex items-center gap-2">
                       <div className="bg-white rounded-full p-2">
                         <BsFillCameraFill className="text-purple-600" />
                       </div>
-                      Esta es tu estrella 👉🏻
-                    </p>
+                      <p>Esta es tu estrella 👉🏻</p>
+                    </div>
                   </div>
                   <p className="my-4 md:mb-8 md:text-md">{item.explanation}</p>
                 </div>
