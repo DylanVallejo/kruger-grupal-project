@@ -21,8 +21,14 @@ export const dataSlice = createSlice({
     reducers: {
         //agreaga estrella al objeto inicial  
         concatApiAndLocal: (state, { payload }) => {
+
             console.log(state.value)
             state.value = [payload, ...state.value];
+
+
+            console.log('hola payload')
+            state.entities = [payload, ...state.value];
+
         },
 
     },
