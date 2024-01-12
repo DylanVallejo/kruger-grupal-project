@@ -15,10 +15,11 @@ El universo es enorme y probablemente infinito, con nuestro website podrás apre
 3. [Technologies](#lenguajes-y-herramientas)
 4. [Installation](#run-it-local)
 5. [Walkthrough](#walkthrough)
-6. [Collaboration](#authors)
-7. [Contributing](#contributing)
-8. [Agradecimientos](#agradecimientos)
-9. [License](#license)
+6. [Despliegue](#despliegue)
+7. [Collaboration](#authors)
+8. [Contributing](#contributing)
+9. [Agradecimientos](#agradecimientos)
+10. [License](#license)
 
 <p style="text-align: center;">
   <img src="https://img.shields.io/badge/MADEWITH-React-1572B6?style=for-the-badge&logo=React" height="30">
@@ -28,6 +29,9 @@ El universo es enorme y probablemente infinito, con nuestro website podrás apre
 ## Mockup
 - _Generado con Xcalidraw_
 [MockUp](https://excalidraw.com/#room=23f893dbf1698e60bbc1,y4d1JmKQ_WhEqQKFUlbVzw)
+
+![image](https://user-images.githubusercontent.com/99937413/212702392-a265b933-c923-4595-b8bc-fc3770f5ed9e.png)
+
 
 ## Acerca del proyecto
 
@@ -87,14 +91,27 @@ Vscode te redirigirá automáticamente al navegador y abrirá una pestaña nueva
 
 ### About #
 
-![Screenshot_20230116_015545](https://user-images.githubusercontent.com/99937413/212616407-a39b2f97-cce3-423d-90a4-9d24073a5f46.png)
+![Screenshot_20230116_072423](https://user-images.githubusercontent.com/99937413/212685842-96b4326f-421d-4f72-b4cb-aff4bc09491b.png)
+
+### Registrando una estrella nueva # 
+- Completa el formulario obligatorio 
+![Screenshot_20230116_075147](https://user-images.githubusercontent.com/99937413/212685998-28d9e7a4-6977-42cd-a6d4-31dd9f66e860.png)
+- Sube una imagen 
+![Screenshot_20230116_075226](https://user-images.githubusercontent.com/99937413/212686013-742f2e49-c240-414d-8207-9cb7158fdb2d.png)
+- Tu nueva estrella sera mostrada en Home 🤓 🙌🙌
+![Screenshot_20230116_075238](https://user-images.githubusercontent.com/99937413/212686026-fddde765-8450-4c88-b372-309701f17571.png)
 
 ### Cronograma de planeación #
 - _Kanban Board_
 
 <img src="kanbanboard.jpeg" width="50%" height="50%">
 
-# _Aquí va el funcionamiento de la página._
+## Despliegue
+
+ - <h2>https://kruger-grupal-project.vercel.app   👩‍🚀 🚀 🪨 🌟 </h2>
+ 
+ ![Screenshot_20230116_081325](https://user-images.githubusercontent.com/99937413/212686490-d5ac8163-6b44-4b36-896c-c536d8b16da8.png)
+
   
 ## Authors
 

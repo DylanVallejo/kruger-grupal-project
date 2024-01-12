@@ -43,7 +43,7 @@ const SingUp = () => {
             <input
               name="email"
               id="email"
-              className="border rounded px-2 py-1 w-60 md:w-80"
+              className="border rounded px-2 py-1 w-60 text-black md:w-80"
               onChange={emailHandler}
               value={email}
               type="email"
@@ -54,7 +54,7 @@ const SingUp = () => {
               Contraseña
             </label>
             <input
-              className="border rounded px-2 py-1 md:w-80"
+              className="border rounded px-2 py-1 text-black md:w-80"
               value={password}
               onChange={passwordHandler}
               type="password"
